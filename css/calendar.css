@@ -1,0 +1,49 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+
+.ly_wrap.ly_ui_calendar .ly_container{padding:0 0 20px;}
+
+/* ui_calendar */
+.ui_calendar{padding:0 18px;}
+.ui_calendar .ui_calendar_control{margin:0 -18px 11px;padding:18px 0 9px;border-bottom:1px solid #f2f3f6;}
+.ui_calendar .ui_calendar_control_inn{position:relative;}
+.ui_calendar .ui_calendar_control h2{padding:2px 0 0;text-align:center;}
+.ui_calendar .ui_calendar_control h2 span:first-child{margin-right:2px}
+.ui_calendar .ui_calendar_control h2 span{font-family:'Noto Sans KR';font-size:14px;font-weight:500;color:#0a121e;line-height:25px;}
+.ui_calendar .ui_calendar_control h2 em{font-size:16px;font-weight:400;color:#0a121e;line-height:25px;}
+/* prev_month/next_month */
+.ui_calendar .ui_calendar_control .prev_month,
+.ui_calendar .ui_calendar_control .next_month{position:absolute;top:0;display:inline-block;width:28px;height:28px;vertical-align:middle;background-repeat:no-repeat;background-position:0 0;}
+.ui_calendar .ui_calendar_control .prev_month{left:12px;background-image:url("../img/ic_previous.png");background-position:center;}
+.ui_calendar .ui_calendar_control .next_month{right:12px;background-image:url("../img/ic_next.png");background-position:center;}
+	/* ㄴhover */
+	.ui_calendar .ui_calendar_control .prev_month:hover,
+	.ui_calendar .ui_calendar_control .next_month:hover{background-color:#f6f7f9;border-radius:50px;}
+
+.ui_calendar .calendar_header th strong{display:inline-block;padding:0 0 0;width:28px;height:28px;font-size:12px;font-weight:400;color:#4d5a6a;line-height:31px;}
+.ui_calendar .calendar_header th.sun strong{color:#ff4633;}
+
+.ui_calendar .calendar_body{position:relative;}
+.ui_calendar .table_container{width:100%;/*display:flex;flex-direction:column;*/}
+.ui_calendar .calendar_row{position:relative;display:flex;flex-direction:column;flex:1;-moz-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;}
+.ui_calendar .calendar_row > table{height:100%;border-spacing:inherit;border-collapse:separate;}
+.ui_calendar .calendar_row td{position:relative;height:100%;cursor:pointer;text-align:center;}
+.ui_calendar .calendar_row td.disable{cursor:default;}
+.ui_calendar .calendar_row td:first-child{border-left:none;}
+
+.ui_calendar .calendar_row td .left{position:relative;display:inline-block;width:28px;height:28px;margin:4px 0;padding:0;font-family:'Noto Sans KR';font-size:12px;font-weight:400;color:#4d5a6a;line-height:31px;border-radius:100%;/*vertical-align:top;*/text-align:center;z-index:2;}
+/* ㄴdisable */
+.ui_calendar .calendar_row td.disable .left{opacity:.4;}
+/* ㄴsaturday */
+.ui_calendar .calendar_row td.satday .left{color:#4d5a6a;}
+/* ㄴsun */
+.ui_calendar .calendar_row td.sun .left{color:#ff4633;}
+/* ㄴholiday */
+.ui_calendar .calendar_row td.holiday .left{color:#ff4633;}
+/* ㄴtoday */
+.ui_calendar .calendar_row td.calToday{/*background-color:#fafcff;*/}
+.ui_calendar .calendar_row td.calToday .today{width:28px;height:28px;margin:0;padding:0;color:#fff;line-height:31px;background-color:#2e84ff;}
+/* ㄴselected day */
+.ui_calendar .calendar_row td.select > div{position:relative;height:100%;}
+.ui_calendar .calendar_row td.select .left{background-color:#f2f3f6;}

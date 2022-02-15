@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/publishing.ui.library.2.0.0.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<!-- header -->
+	<div class="header">
+		<div class="header_inn">
+			<h2>견적/계약서 관리</h2>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<hr>
+
+	<!-- container -->
+	<div class="container">
+		<div class="service mgt20 mgb20">
+			<ul>
+				<li>견적서 수정 및 재발송은 계약 상태 완료 전까지 가능합니다.</li>
+				<li>계약을 체결한 고객의 계약서를 조회할 수 있습니다.</li>
+			</ul>
+		</div>
+
+		<div>
+			<div class="tbl_srchBx">
+				<table summary="">
+					<caption></caption>
+					<colgroup>
+					<col style="width:86px;">
+					<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><div>일자</div></th>
+							<td>
+								<div class="form_row">
+									<div class="combo_control js_wrap" style="width:120px;">
+										<a href="#none" class="bt_combo js_click">견적 요청일</a>
+										<div class="ly_combo mCustomScrollbar js_show" style="display:none;max-height:196px;">
+											<ul>
+												<li><a href="#none">견적 요청일</a></li>
+												<li><a href="#none">견적 발송일</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="date_control mgl8" style="width:118px;">
+										<label for="">
+											<input type="text" id="" value="0000-00-00" placeholder="">
+											<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+										</label>
+									</div>
+									<span class="date_seperator">-</span>
+									<div class="date_control" style="width:118px;">
+										<label for="">
+											<input type="text" id="" value="0000-00-00" placeholder="">
+											<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+										</label>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><div>검색</div></th>
+							<td>
+								<div class="form_row">
+									<div class="combo_control js_wrap" style="width:120px;">
+										<a href="#none" class="bt_combo js_click">전체</a>
+										<div class="ly_combo mCustomScrollbar js_show" style="display:none;max-height:196px;">
+											<ul>
+												<li><a href="#none">전체</a></li>
+												<li><a href="#none">이용기관 ID</a></li>
+												<li><a href="#none">사업자번호</a></li>
+												<li><a href="#none">이용기관명</a></li>
+												<li><a href="#none">컨설턴트</a></li>
+											</ul>
+										</div>
+									</div>
+									<label for="" class="text_control mgl8">
+										<input type="text" id="" value="" placeholder="검색어를 입력해 주세요." style="width:260px;">
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<div>가입상품</div>
+							</th>
+							<td>
+								<div class="form_row">
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>SMB</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>SMB people</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id="" checked><i></i>
+											<span>SMB Card</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id="" checked><i></i>
+											<span>Standard</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>Premium</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id="" checked><i></i>
+											<span>Public</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>Enterprise</span>
+										</label>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<div>상태</div>
+							</th>
+							<td>
+								<div class="form_row">
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>견적요청</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>견적진행</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id="" checked><i></i>
+											<span>견적발송</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id="" checked><i></i>
+											<span>계약진행</span>
+										</label>
+									</div>
+									<div class="chk_control">
+										<label for="">
+											<input type="checkbox" id=""><i></i>
+											<span>계약완료</span>
+										</label>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="btnArea_wrap">
+			<div class="btnArea_inn">
+				<div class="left">
+					<div class="cntalign">
+						<a href="#none" class="bt_b32"><span>견적서 직접등록</span></a>
+					</div>
+				</div>
+				<div class="right">
+					<div class="cntalign">
+						<a href="#none" class="bt_w32"><span>엑셀 다운로드</span></a>
+					</div>
+					<div class="cntalign">
+						<a href="#none" class="bt_w32"><span>조회</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tbl_listBx">
+			<table summary="">
+				<caption></caption>
+				<colgroup>
+				<col style="width:80px;">
+				<col style="width:140px;">
+				<col style="width:120px;">
+				<col style="width:80px;">
+				<col style="width:80px;">
+				<col style="width:120px;">
+				<col style="width:120px;">
+				<col style="width:140px;">
+				<col style="width:116px;">
+				<col style="width:139px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col"><div>상태</div></th>
+						<th scope="col"><div>회사명</div></th>
+						<th scope="col"><div>사업자번호</div></th>
+						<th scope="col"><div>컨설턴트</div></th>
+						<th scope="col"><div>견적서</div></th>
+						<th scope="col"><div>견적 요청일</div></th>
+						<th scope="col"><div>견적 발송일</div></th>
+						<th scope="col"><div>가입상품</div></th>
+						<th scope="col"><div>계약서</div></th>
+						<th scope="col"><div>이용기관 ID</div></th>
+					</tr>
+				</thead>
+				<!-- 검색결과 없음 -->
+				<tfoot style="display:none;">
+					<tr class="no_hover" style="display:table-row;">
+						<td colspan="10" class="searchNo_info"><div><strong>‘검색명’</strong>에 대한 검색결과가 없습니다.</div></td>
+					</tr>
+				</tfoot>
+				<!-- //검색결과 없음 -->
+				<!-- 내용 없음 -->
+				<tfoot style="display:none;">
+					<tr class="no_hover" style="display:table-row;">
+						<td colspan="10" class="no_info"><div>등록된 내용이 없습니다.</div></td>
+					</tr>
+				</tfoot>
+				<!-- //내용 없음 -->
+				<tbody>
+					<tr>
+						<td><div>견적요청</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>SMB</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>표준 계약서</span></a></div></td>
+						<td><div>UTLZ_115</div></td>
+					</tr>
+					<tr>
+						<td><div>견적진행</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>SMB people</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_116</div></td>
+					</tr>
+					<tr>
+						<td><div>견적발송</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>SMB Card</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_117</div></td>
+					</tr>
+					<tr>
+						<td><div>계약진행</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>견적서</span></a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Standard</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_118</div></td>
+					</tr>
+					<tr>
+						<td><div>계약완료</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Premium</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_119</div></td>
+					</tr>
+					<tr>
+						<td><div>견적발송</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Public</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_120</div></td>
+					</tr>
+					<tr>
+						<td><div>견적요청</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="tx_link">작성하기</a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Enterprise</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>표준 계약서</span></a></div></td>
+						<td><div>UTLZ_121</div></td>
+					</tr>
+					<tr>
+						<td><div>계약완료</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>견적서</span></a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Enterprise</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_121</div></td>
+					</tr>
+					<tr>
+						<td><div>계약완료</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>견적서</span></a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Enterprise</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_121</div></td>
+					</tr>
+					<tr>
+						<td><div>계약완료</div></td>
+						<td><div><a href="#none" class="tx_link">bizplay</a></div></td>
+						<td><div>000-00-00000</div></td>
+						<td><div>홍길동</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>견적서</span></a></div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>0000-00-00</div></td>
+						<td><div>Enterprise</div></td>
+						<td><div><a href="#none" class="bt_w28"><span>계약서</span></a></div></td>
+						<td><div>UTLZ_121</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Paging wrap -->
+		<div class="paging_wrap">
+			<!-- pagination -->
+			<div class="paging type_1">
+				<a href="#none" class="bt_pag_cntr first"><span class="blind">first</span></a><a href="#none" class="bt_pag_cntr prev"><span class="blind">previous</span></a>
+				<span class="pag_num">
+					<a href="#none" class="on">1</a><a href="#none">2</a><a href="#none">3</a><a href="#none">4</a><a href="#none">5</a><a href="#none">6</a><a href="#none" class="select">7</a><a href="#none">8</a><a href="#none">9</a><a href="#none">10</a>
+				</span>
+				<a href="#none" class="bt_pag_cntr next"><span class="blind">next</span></a><a href="#none" class="bt_pag_cntr last"><span class="blind">last</span></a>
+			</div>
+			<!-- //pagination -->
+		</div>
+		<!-- //Paging wrap -->
+	</div>
+	<!-- //container -->
+</div>
+	<script>
+		$('.autoComplete_ly_wrap').toggleAccordion({
+			wrapClass:".js_wrap",
+			clickClass:".js_click",
+			showClass:".js_show",
+			clickclassNoHide:[".mCSB_dragger_bar", ".mCSB_draggerRail"],
+			layer:true,
+			speed:300
+		});
+	</script>
+</body>
+</html>

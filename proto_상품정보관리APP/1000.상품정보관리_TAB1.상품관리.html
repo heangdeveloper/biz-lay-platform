@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/publishing.ui.library.2.0.0.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<!-- header -->
+	<div class="header">
+		<div class="header_inn">
+			<h2>상품 정보관리</h2>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<hr>
+
+	<!-- container -->
+	<div class="container">
+		<!-- tabs_wrap -->
+		<div class="tabs_wrap">
+			<div class="tabs_header">
+				<ul class="cboth">
+					<li><a href="javascript:void(0)" class="jsTabClick on"><span>상품관리</span></a></li>
+					<li><a href="javascript:void(0)" class="jsTabClick"><span>기본 상품관리</span></a></li>
+				</ul>
+			</div>
+			<div class="tabs_body_wrap">
+				<div class="tabs_body cboth">
+					<!-- 상품관리 -->
+					<div class="tab_cnt" style="display:block;">
+						<div class="service">
+							<ul>
+								<li>경비관리 서비스 각 상품별 정보를 관리합니다. (관리자 메뉴)</li>
+								<li>상품 내용은 고객의 서비스 가입관리 및 견적서 상품명에 공통 사용됩니다.</li>
+								<li>컨설턴트가 견적서에서 상품 선택 시 등록된 서비스 명 및 가격이 견적서에 자동 적용됩니다. (빌링 상품 코드는 선택사항임)</li>
+							</ul>
+						</div>
+						<div class="btnArea_wrap">
+							<div class="btnArea_inn">
+								<div class="left">
+									<div class="cntalign">
+										<a href="#none" class="bt_b32"><span>등록</span></a>
+									</div>
+									<div class="cntalign">
+										<a href="#none" class="bt_w32"><span>삭제</span></a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="cntalign">
+										<a href="#none" class="bt_b32"><span>상품 일괄 등록</span></a>
+									</div>
+									<div class="cntalign">
+										<a href="#none" class="bt_w32"><span>엑셀 다운로드</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tbl_listBx">
+							<table summary="">
+								<caption></caption>
+								<colgroup>
+								<col style="width:38px;">
+								<col style="width:81px;">
+								<col style="width:161px;">
+								<col style="width:199px;">
+								<col style="width:81px;">
+								<col style="width:83px;">
+								<col style="width:100px;">
+								<col style="width:120px;">
+								<col style="width:80px;">
+								<col style="width:153px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</th>
+										<th scope="col"><div>구분</div></th>
+										<th scope="col"><div>상품명</div></th>
+										<th scope="col"><div class="tal">항목</div></th>
+										<th scope="col"><div>타입</div></th>
+										<th scope="col"><div>단위</div></th>
+										<th scope="col"><div>청구주기</div></th>
+										<th scope="col"><div class="tar">단가</div></th>
+										<th scope="col"><div>수량</div></th>
+										<th scope="col"><div class="tal">비고</div></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>SMB</div></td>
+										<td><div class="tal">SMB people 도입비</div></td>
+										<td><div>패키지</div></td>
+										<td><div>법인</div></td>
+										<td><div>1회성</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal">20명 기본</div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id="" checked><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>SMB people</div></td>
+										<td><div class="tal">SMB people 월 이용 수수료</div></td>
+										<td><div>라이선스</div></td>
+										<td><div>법인</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">5,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal">50명 기본</div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>추가</div></td>
+										<td><div>SMB Card</div></td>
+										<td><div class="tal">SMB Card 도입비</div></td>
+										<td><div>패키지</div></td>
+										<td><div>User</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>추가</div></td>
+										<td><div>Standard</div></td>
+										<td><div class="tal">SMB Card 월 이용 수수료</div></td>
+										<td><div>패키지</div></td>
+										<td><div>User</div></td>
+										<td><div>1회성</div></td>
+										<td><div class="tar">3,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>Premium</div></td>
+										<td><div class="tal">Standard 도입비</div></td>
+										<td><div>옵션상품</div></td>
+										<td><div>User</div></td>
+										<td><div>1회성</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id="" checked><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>Public</div></td>
+										<td><div class="tal">Standard 월 이용 수수료</div></td>
+										<td><div>라이선스</div></td>
+										<td><div>User</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">3,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id="" checked><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>Enterprise</div></td>
+										<td><div class="tal">Premium 도입비</div></td>
+										<td><div>라이선스</div></td>
+										<td><div>법인</div></td>
+										<td><div>1회성</div></td>
+										<td><div class="tar">5,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal">10명 기본</div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>기본</div></td>
+										<td><div>SMB people</div></td>
+										<td><div class="tal">Premium 월 이용 수수료</div></td>
+										<td><div>옵션상품</div></td>
+										<td><div>법인</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">300,000</div></td>
+										<td><div>2</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>추가</div></td>
+										<td><div>인택스</div></td>
+										<td><div class="tal">Premium 월 추가 수수료</div></td>
+										<td><div>옵션상품</div></td>
+										<td><div>User</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">5,000,000</div></td>
+										<td><div>1</div></td>
+										<td><div class="tal"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="chk_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>추가</div></td>
+										<td><div>인택스</div></td>
+										<td><div class="tal">인택스</div></td>
+										<td><div>라이선스</div></td>
+										<td><div>법인</div></td>
+										<td><div>매월</div></td>
+										<td><div class="tar">10,000,000</div></td>
+										<td><div>4</div></td>
+										<td><div class="tal">50명 기본</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- Paging wrap -->
+						<div class="paging_wrap">
+							<div class="pagin_sort js_wrap">
+								<a href="#none" class="js_click">10</a>
+								<div class="pagin_sort_ly js_show">
+									<ul>
+										<li><a href="#none">10</a></li>
+										<li><a href="#none">25</a></li>
+										<li><a href="#none">50</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- pagination -->
+							<div class="paging type_1">
+								<a href="#none" class="bt_pag_cntr first"><span class="blind">first</span></a><a href="#none" class="bt_pag_cntr prev"><span class="blind">previous</span></a>
+								<span class="pag_num">
+									<a href="#none" class="on">1</a><a href="#none">2</a><a href="#none">3</a><a href="#none">4</a><a href="#none">5</a><a href="#none">6</a><a href="#none" class="select">7</a><a href="#none">8</a><a href="#none">9</a><a href="#none">10</a>
+								</span>
+								<a href="#none" class="bt_pag_cntr next"><span class="blind">next</span></a><a href="#none" class="bt_pag_cntr last"><span class="blind">last</span></a>
+							</div>
+							<!-- //pagination -->
+						</div>
+						<!-- //Paging wrap -->
+					</div>
+					<!-- //상품관리 -->
+				</div>
+			</div>
+		</div>
+		<!-- //tabs_wrap -->
+	</div>
+	<!-- //container -->
+</div>
+	<script>
+		$('.autoComplete_ly_wrap').toggleAccordion({
+			wrapClass:".js_wrap",
+			clickClass:".js_click",
+			showClass:".js_show",
+			clickclassNoHide:[".mCSB_dragger_bar", ".mCSB_draggerRail"],
+			layer:true,
+			speed:300
+		});
+	</script>
+</body>
+</html>

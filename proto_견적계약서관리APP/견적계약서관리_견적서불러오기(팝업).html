@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/publishing.ui.library.2.0.0.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body>
+
+<div class="pop_wrap flexDisplay">
+	<div class="pop_inn w800">
+		<div class="pop_header">
+			<h2>견적서 불러오기</h2>
+			<a href="#none" class="bt_popClose"><span class="blind">팝업닫기</span></a>
+		</div>
+
+		<hr>
+
+		<div class="pop_container">
+			<div class="pop_content">
+				<div>
+					<div class="pop_tx">
+						<p>발송 완료된 견적서를 불러오기하여 견적서 작성에 활용할 수 있습니다.</p>
+					</div>
+					<div class="tbl_srchBx">
+						<table summary="">
+							<caption></caption>
+							<colgroup>
+							<col style="width:70px;">
+							<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><div>견적발송일</div></th>
+									<td>
+										<div class="form_row">
+											<div class="date_control" style="width:118px;">
+												<label for="">
+													<input type="text" id="" value="0000-00-00" placeholder="">
+													<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+												</label>
+											</div>
+											<span class="date_seperator">-</span>
+											<div class="date_control" style="width:118px;">
+												<label for="">
+													<input type="text" id="" value="0000-00-00" placeholder="">
+													<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+												</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><div>검색</div></th>
+									<td>
+										<div class="form_row">
+											<div class="combo_control js_wrap" style="width:120px;">
+												<a href="#none" class="bt_combo js_click">전체</a>
+												<div class="ly_combo mCustomScrollbar js_show" style="display:inline-block;max-height:196px;">
+													<ul>
+														<li><a href="#none">전체</a></li>
+														<li><a href="#none">이용기관 ID</a></li>
+														<li><a href="#none">사업자번호</a></li>
+														<li><a href="#none">이용기관명</a></li>
+														<li><a href="#none">컨설턴트</a></li>
+													</ul>
+												</div>
+											</div>
+											<label for="" class="text_control mgl8">
+												<input type="text" id="" value="" placeholder="검색어를 입력해 주세요." style="width:260px;">
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div>상품선택</div>
+									</th>
+									<td>
+										<div class="form_row">
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id=""><i></i>
+													<span>SMB</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id=""><i></i>
+													<span>SMB people</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id="" checked><i></i>
+													<span>SMB Card</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id="" checked><i></i>
+													<span>Standard</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id=""><i></i>
+													<span>Premium</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id="" checked><i></i>
+													<span>Public</span>
+												</label>
+											</div>
+											<div class="chk_control">
+												<label for="">
+													<input type="checkbox" id=""><i></i>
+													<span>Enterprise</span>
+												</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="bt_wrap">
+						<div class="left"></div>
+						<div class="right">
+							<a href="#none" class="bt_w32"><span>조회</span></a>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="tbl_listBx3">
+						<div class="mCustomScrollbar_x" style="max-width:832px;">
+							<table summary="">
+								<caption></caption>
+								<colgroup>
+								<col style="width:38px;">
+								<col style="width:88px;">
+								<col style="width:90px;">
+								<col style="width:120px;">
+								<col style="width:94px;">
+								<col style="width:93px;">
+								<col style="width:106px;">
+								<col style="width:106px;">
+								<col style="width:106px;">
+								<col style="width:68px;">
+								<col style="width:98px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><div></div></th>
+										<th scope="col"><div>견적발송일</div></th>
+										<th scope="col"><div>상품명</div></th>
+										<th scope="col"><div>회사명</div></th>
+										<th scope="col"><div>회사 ID</div></th>
+										<th scope="col"><div>사업자번호</div></th>
+										<th scope="col"><div class="tar">도입비(1회) 합계</div></th>
+										<th scope="col"><div class="tar">운영비(월) 합계</div></th>
+										<th scope="col"><div class="tar">운영비(연) 합계</div></th>
+										<th scope="col"><div>컨설턴트</div></th>
+										<th scope="col"><div>견적서</div></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div>
+												<div class="radio_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>0000-00-00</div></td>
+										<td><div>Enterprise</div></td>
+										<td><div>bizplay 1</div></td>
+										<td><div>UTLZ_00000</div></td>
+										<td><div class="tar">000-00-0000</div></td>
+										<td><div class="tar">30,000,000</div></td>
+										<td><div class="tar">2,000,000</div></td>
+										<td><div class="tar">32,000,000</div></td>
+										<td><div>홍길동</div></td>
+										<td>
+											<div>
+												<a href="#none" class="bt_w28"><span>견적서 보기</span></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="radio_control">
+													<label for="">
+														<input type="checkbox" id="" checked><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>0000-00-00</div></td>
+										<td><div>SMB people</div></td>
+										<td><div>bizplay 2</div></td>
+										<td><div>UTLZ_00000</div></td>
+										<td><div class="tar">000-00-0000</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div class="tar">2,000,000</div></td>
+										<td><div>홍길동</div></td>
+										<td>
+											<div>
+												<a href="#none" class="bt_w28"><span>견적서 보기</span></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="radio_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>0000-00-00</div></td>
+										<td><div>Standard</div></td>
+										<td><div>bizplay 3</div></td>
+										<td><div>UTLZ_00000</div></td>
+										<td><div class="tar">000-00-0000</div></td>
+										<td><div class="tar">3,000,000</div></td>
+										<td><div class="tar">3,000,000</div></td>
+										<td><div class="tar">6,000,000</div></td>
+										<td><div>홍길동</div></td>
+										<td>
+											<div>
+												<a href="#none" class="bt_w28"><span>견적서 보기</span></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="radio_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>0000-00-00</div></td>
+										<td><div>Premium</div></td>
+										<td><div>bizplay 4</div></td>
+										<td><div>UTLZ_00000</div></td>
+										<td><div class="tar">000-00-0000</div></td>
+										<td><div class="tar">3,000,000</div></td>
+										<td><div class="tar">3,000,000</div></td>
+										<td><div class="tar">6,000,000</div></td>
+										<td><div>홍길동</div></td>
+										<td>
+											<div>
+												<a href="#none" class="bt_w28"><span>견적서 보기</span></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>
+												<div class="radio_control">
+													<label for="">
+														<input type="checkbox" id=""><i></i>
+													</label>
+												</div>
+											</div>
+										</td>
+										<td><div>0000-00-00</div></td>
+										<td><div>SMB</div></td>
+										<td><div>bizplay 5</div></td>
+										<td><div>UTLZ_00000</div></td>
+										<td><div class="tar">000-00-0000</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div class="tar">1,000,000</div></td>
+										<td><div class="tar">2,000,000</div></td>
+										<td><div>홍길동</div></td>
+										<td>
+											<div>
+												<a href="#none" class="bt_w28"><span>견적서 보기</span></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- Paging wrap -->
+					<div class="paging_wrap">
+						<!-- pagination -->
+						<div class="paging type_2">
+							<a href="#none" class="bt_pag_cntr prev"><span class="blind">previous</span></a>
+							<span class="pag_num">
+								<a href="#none" class="on">1</a>
+								<span>/</span>
+								<a href="#none" class="on">3</a>
+							</span>
+							<a href="#none" class="bt_pag_cntr next"><span class="blind">next</span></a>
+						</div>
+						<!-- //pagination -->
+					</div>
+					<!-- //Paging wrap -->
+				</div>
+			</div>
+			<div class="pop_footer">
+				<div class="left"></div>
+				<div class="right">
+					<a href="#none" class="bt_b32"><span>불러오기</span></a>
+					<a href="#none" class="bt_w32 mgl8"><span>취소</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('.autoComplete_ly_wrap').toggleAccordion({
+		wrapClass:".js_wrap",
+		clickClass:".js_click",
+		showClass:".js_show",
+		clickclassNoHide:[".mCSB_dragger_bar", ".mCSB_draggerRail"],
+		layer:true,
+		speed:300
+	});
+
+	$(".mCustomScrollbar_x").mCustomScrollbar({
+    	axis:"x",
+		setWidth: '100%'
+	});
+</script>
+</body>
+</html>
