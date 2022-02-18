@@ -184,7 +184,7 @@
 							<td>
 								<div class="form_row">
 									<span>0000-00-00</span>
-									<div class="combo_control2 js_wrap mgl8" style="min-width:73px;">
+									<div class="combo_control2 js_wrap mgl8" style="min-width:80px;">
 										<a href="#none" class="bt_combo js_click">내용 보기</a>
 										<div class="ly_combo mCustomScrollbar js_show" style="display:none;max-height:135px;">
 											<ul>
@@ -456,6 +456,15 @@
 	<!-- //container -->
 </div>
 <!-- //wrap -->
-
+<script>
+	$('.autoComplete_ly_wrap').toggleAccordion({
+		wrapClass:".js_wrap",
+		clickClass:".js_click",
+		showClass:".js_show",
+		clickclassNoHide:[".mCSB_dragger_bar", ".mCSB_draggerRail"],
+		layer:true,
+		speed:300
+	});
+</script>
 </body>
 </html>
